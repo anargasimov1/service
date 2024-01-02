@@ -7,12 +7,13 @@ public class Entity {
     private int age;
 
     boolean isAnimal;
-
+    public Entity(){
+        System.out.println("default constructor is working");
+    }
     public Entity(String name, long id, int age, boolean isAnimal) {
         this.name = name;
         this.id = id;
         this.age = age;
-        this.isAnimal = isAnimal;
     }
 
     public String getName() {
@@ -46,4 +47,6 @@ public class Entity {
     public void setAnimal(boolean animal) {
         isAnimal = animal;
     }
+
+    public void print(){}
 }
