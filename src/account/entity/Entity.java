@@ -6,6 +6,11 @@ public class Entity {
     private long id;
     private int age;
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
     boolean isAnimal;
     public Entity(){
         System.out.println("default constructor is working");
